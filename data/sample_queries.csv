@@ -1,0 +1,7 @@
+query_id,investment_amount,risk,tenure_months,minimum_return,category,liquidity
+Q001,200000,Moderate,24,9,Debt,Medium
+Q002,50000,Low,12,,,High
+Q003,100000,High,36,12,Equity,Low
+Q004,80000,Moderate,18,,,High
+Q005,300000,High,36,11,Equity,Low
+Q006,250000,Moderate,24,9,,Medium

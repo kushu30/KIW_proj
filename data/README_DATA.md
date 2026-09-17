@@ -1,0 +1,1 @@
+Synthetic dataset for the Python assessment. opportunities.csv contains 30 records, including deliberate formatting variation and one duplicate ID. sample_queries.csv contains development scenarios. All data is fictional.

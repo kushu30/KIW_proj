@@ -1,0 +1,13 @@
+{
+  "opportunity_id": "string",
+  "name": "string",
+  "provider": "string",
+  "category": "string",
+  "minimum_investment_inr": "integer",
+  "tenure_min_months": "integer",
+  "tenure_max_months": "integer",
+  "risk": "Low|Low-Moderate|Moderate|Moderate-High|High",
+  "expected_return_min_pct": "number|null",
+  "expected_return_max_pct": "number|null",
+  "liquidity": "High|Medium|Low"
+}

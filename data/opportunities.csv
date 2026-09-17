@@ -1,0 +1,32 @@
+opportunity_id,name,provider,category,minimum_investment,tenure,risk,expected_return,liquidity
+OPP001,Alpha Corporate Bond Basket,Northstar Capital,Fixed Income,"₹1,00,000",18 months,Moderate,9.2% p.a.,High
+OPP002,BlueRiver Infrastructure Note,BlueRiver Finance,Structured Credit,Rs. 2 lakh,24 months,Medium,10.5% p.a.,Medium
+OPP003,Cedar Short Duration Fund,Cedar Asset Management,Mutual Fund,25000,12-24 months,Low-Moderate,7.1% p.a.,High
+OPP004,Delta Growth Equity Basket,Delta Wealth Partners,Equity,"₹50,000",3 years,High,14-18% p.a.,Low
+OPP005,Evergreen Tax Saver,Evergreen AMC,Mutual Fund,"₹10,000",36 months,Moderately High,8.4% p.a.,Low
+OPP006,Falcon Renewable Credit,Falcon Alternative Investments,Private Credit,₹5 lakh,30 months,Moderate-High,11.8% p.a.,Low
+OPP007,Greenfield Treasury Plus,Greenfield Securities,Treasury,250000,9 months,Low,6.6% p.a.,High
+OPP008,Harbor Logistics Lease Fund,Harbor Capital,Alternative Investment,"₹3,00,000",24-30 months,Moderate,10.1-11.0% p.a.,Medium
+OPP009,Indus Bluechip Portfolio,Indus Portfolio Managers,Equity,₹1.5 lakh,48 months,High,12.5% p.a.,Low
+OPP010,Jupiter Invoice Yield,Jupiter FinServe,Invoice Financing,"₹75,000",6-12 months,Moderate,9.8-12.2% p.a.,Medium
+OPP011,Kaveri Balanced Allocation,Kaveri Asset Managers,Hybrid Fund,"₹20,000",24 months+,Moderate,8.0% p.a.,Medium
+OPP012,Lotus Capital Preservation,Lotus Wealth,Debt,100000,12 months,Low,6.9% p.a.,High
+OPP013,Meridian SME Growth Note,Meridian Capital Advisors,Private Credit,"₹2,00,000",36 months,High,13.0% p.a.,Low
+OPP014,Nova Gold Linked Strategy,Nova Investments,Commodity,₹1.25 lakh,18-24 months,High,Variable,Medium
+OPP015,Orion Municipal Bond Fund,Orion Mutual,Municipal Bonds,"₹50,000",24 months,Low-Moderate,7.6% p.a.,High
+OPP016,Pioneer Commercial Property Debt,Pioneer Alternative Credit,Real Estate Debt,₹10 lakh,48 months,Moderate-High,12.0% p.a.,Low
+OPP017,Quantum Cash Plus,Quantum Asset Management,Liquid Fund,"₹5,000",3-6 months,Low,5.8% p.a.,High
+OPP018,Riverstone Digital Infrastructure,Riverstone Capital,Infrastructure,"₹4,00,000",36 months,Moderate-High,11.2% p.a.,Low
+OPP019,Summit Dividend Equity,Summit PMS,Equity,₹3 lakh,36 months+,High,11-15% p.a.,Low
+OPP020,Terra Green Energy Debenture,Terra Finance,Corporate Debt,"₹1,50,000",24 months,Moderate,9.7% p.a.,Medium
+OPP021,Unity Micro Enterprise Pool,Unity Finance,Invoice Financing,₹1 lakh,9-15 months,Moderate-High,10.8% p.a.,Medium
+OPP022,Vertex Long Horizon Equity,Vertex Capital,Equity,"₹1,00,000",60 months,High,15% p.a.,Low
+OPP023,Willow Income Opportunity,Willow Asset Management,Debt,"₹80,000",18 months,Low-Moderate,7.9% p.a.,High
+OPP024,Xeno Venture Debt,Xeno Capital,Venture Debt,"₹5,00,000",36 months,High,14.0% p.a.,Low
+OPP025,Yellowstone Asset Lease,Yellowstone Finance,Asset Leasing,₹2 lakh,24 months,Moderate,9.9% p.a.,Medium
+OPP026,Zenith Government Securities,Zenith AMC,Government Bonds,"₹50,000",12 months,Low,6.8% p.a.,High
+OPP027,Aster High Yield Credit,Aster Credit Partners,Private Credit,"₹1,00,000",24 months,High,12.6% p.a.,Low
+OPP028,Beacon Affordable Housing Debt,Beacon Finance,Real Estate Debt,₹2.5 lakh,30 months,Moderate-High,10.9% p.a.,Low
+OPP029,Cobalt Multi Asset Strategy,Cobalt Wealth,Multi Asset,₹1 lakh,24-36 months,Moderate,9.0% p.a.,Medium
+OPP030,Dawn Short Term Credit,Dawn Financial Services,Corporate Debt,"₹60,000",9 months,Low-Moderate,7.3% p.a.,High
+OPP030,Dawn Short Term Credit - Duplicate,Dawn Financial Services,Corporate Debt,"₹60,000",9 months,Low-Moderate,7.3% p.a.,High
