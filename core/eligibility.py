@@ -2,10 +2,10 @@ from core.domain import EligibilityResult, Opportunity, SearchQuery
 
 
 def check_amount(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
-    passed = query.investment_amount >= opp.min_investment
-    if passed:
-        return True, f"investment {query.investment_amount:g} meets minimum {opp.min_investment}"
-    return False, f"investment {query.investment_amount:g} below minimum {opp.min_investment}"
+    amount, minimum = f"{query.investment_amount:,.0f}", f"{opp.min_investment:,.0f}"
+    if query.investment_amount >= opp.min_investment:
+        return True, f"investment {amount} meets minimum {minimum}"
+    return False, f"investment {amount} below minimum {minimum}"
 
 
 def check_risk(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
@@ -24,7 +24,7 @@ def check_tenure(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
 
 def check_min_return(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
     if query.minimum_return is None:
-        return True, "no preference given"
+        return True, "minimum_return: no preference given"
     if not opp.return_supported:
         return False, f"return not disclosed; cannot confirm >= {query.minimum_return:g}%"
     if opp.return_min >= query.minimum_return:
@@ -34,15 +34,16 @@ def check_min_return(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
 
 def check_category(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
     if query.category is None:
-        return True, "no preference given"
-    if opp.category.lower() == query.category.lower():
-        return True, f"category {opp.category} matches {query.category}"
-    return False, f"category {opp.category} does not match {query.category}"
+        return True, "category: no preference given"
+    opp_category, requested = opp.category.strip().lower(), query.category.strip().lower()
+    if requested in opp_category:
+        return True, f"category '{opp.category}' matches preference '{query.category}'"
+    return False, f"category '{opp.category}' does not match preference '{query.category}'"
 
 
 def check_liquidity(opp: Opportunity, query: SearchQuery) -> tuple[bool, str]:
     if query.liquidity is None:
-        return True, "no preference given"
+        return True, "liquidity: no preference given"
     if opp.liquidity >= query.liquidity:
         return True, f"liquidity {opp.liquidity.name} meets minimum {query.liquidity.name}"
     return False, f"liquidity {opp.liquidity.name} below minimum {query.liquidity.name}"

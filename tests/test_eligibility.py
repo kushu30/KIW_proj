@@ -76,9 +76,15 @@ def test_min_return_uses_return_min_and_handles_unsupported():
     assert check_min_return(unsupported, _query(minimum_return=1.0))[0] is False
 
 
-def test_category_case_insensitive_and_absent_passes():
-    opp = _opp(category="Debt")
+def test_category_substring_match_case_insensitive():
+    # Providers name specific products ("Corporate Debt"); users think in broad asset
+    # classes ("Debt"). A broad query term should match the narrower product name.
+    opp = _opp(category="Corporate Debt")
     assert check_category(opp, _query(category="debt"))[0] is True
+
+
+def test_category_genuine_non_match_and_absent_passes():
+    opp = _opp(category="Corporate Debt")
     assert check_category(opp, _query(category="Equity"))[0] is False
     assert check_category(opp, _query(category=None))[0] is True
 

@@ -13,11 +13,11 @@
         "preference": 10.0
       },
       "reasons": [
-        "investment 50000 meets minimum 50000",
+        "investment 50,000 meets minimum 50,000",
         "risk LOW within tolerance LOW",
         "tenure 12 months within 12-12 months",
-        "no preference given",
-        "no preference given",
+        "minimum_return: no preference given",
+        "category: no preference given",
         "liquidity HIGH meets minimum HIGH",
         "score 85.00/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 0.0, preference 10.0)"
       ],

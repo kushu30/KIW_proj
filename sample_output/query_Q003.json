@@ -13,11 +13,11 @@
         "preference": 10.0
       },
       "reasons": [
-        "investment 100000 meets minimum 50000",
+        "investment 100,000 meets minimum 50,000",
         "risk HIGH within tolerance HIGH",
         "tenure 36 months within 36-36 months",
         "return_min 14% meets minimum 12%",
-        "category Equity matches Equity",
+        "category 'Equity' matches preference 'Equity'",
         "liquidity LOW meets minimum LOW",
         "score 92.50/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 7.5, preference 10.0)"
       ],

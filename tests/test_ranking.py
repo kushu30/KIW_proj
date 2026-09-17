@@ -59,6 +59,13 @@ def test_return_fit_all_equal_no_divide_by_zero():
     assert return_fit(_opp(return_min=9.0), pool) == 1.0
 
 
+def test_return_fit_worst_in_pool_floors_at_point_two_not_zero():
+    # Every candidate in the pool already cleared the user's minimum-return bar, so the
+    # worst one still earns some credit instead of being zeroed out by min-max normalization.
+    pool = [7.1, 9.0, 15.0]
+    assert return_fit(_opp(return_min=7.1), pool) == pytest.approx(0.2)
+
+
 def test_rank_single_eligible_result_does_not_crash():
     opp = _opp()
     ranked = rank([_eligible(opp)], _query())

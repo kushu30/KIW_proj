@@ -102,7 +102,7 @@ Weights as named constants: return 30, risk_fit 25, tenure_fit 20, budget 15, pr
 
 | Component | Formula (returns 0.0–1.0) |
 |---|---|
-| return | min-max normalize `return_min` across eligible set with supported return. All equal -> 1.0. Unsupported -> 0.5 |
+| return | min-max normalize `return_min` across eligible set with supported return, floored at 0.2 (every eligible candidate already cleared the user's bar, so the worst one shouldn't score zero). All equal -> 1.0. Unsupported -> 0.5 |
 | risk_fit | `diff = user.risk - opp.risk`; `1.0 - diff*0.15`, floored at 0.3 |
 | tenure_fit | max is None -> 0.8. Else `mid=(min+max)/2`, `half=(max-min)/2`; if half==0 -> 1.0, else `1 - 0.5*abs(tenure-mid)/half` |
 | budget | `1 - (min_investment / investment_amount)`, clipped to 0.0-1.0. A lower entry bar leaves more capital free for diversification |

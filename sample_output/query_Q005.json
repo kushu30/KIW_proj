@@ -13,11 +13,11 @@
         "preference": 10.0
       },
       "reasons": [
-        "investment 300000 meets minimum 50000",
+        "investment 300,000 meets minimum 50,000",
         "risk HIGH within tolerance HIGH",
         "tenure 36 months within 36-36 months",
         "return_min 14% meets minimum 11%",
-        "category Equity matches Equity",
+        "category 'Equity' matches preference 'Equity'",
         "liquidity LOW meets minimum LOW",
         "score 97.50/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 12.5, preference 10.0)"
       ],
@@ -37,22 +37,22 @@
     {
       "id": "OPP019",
       "name": "Summit Dividend Equity",
-      "score": 51.0,
+      "score": 57.0,
       "score_breakdown": {
-        "return": 0.0,
+        "return": 6.0,
         "risk_fit": 25.0,
         "tenure_fit": 16.0,
         "budget": 0.0,
         "preference": 10.0
       },
       "reasons": [
-        "investment 300000 meets minimum 300000",
+        "investment 300,000 meets minimum 300,000",
         "risk HIGH within tolerance HIGH",
         "tenure 36 months within 36+ months",
         "return_min 11% meets minimum 11%",
-        "category Equity matches Equity",
+        "category 'Equity' matches preference 'Equity'",
         "liquidity LOW meets minimum LOW",
-        "score 51.00/100 (return 0.0, risk_fit 25.0, tenure_fit 16.0, budget 0.0, preference 10.0)"
+        "score 57.00/100 (return 6.0, risk_fit 25.0, tenure_fit 16.0, budget 0.0, preference 10.0)"
       ],
       "attributes": {
         "provider": "Summit PMS",

@@ -9,7 +9,9 @@ def return_fit(opp: Opportunity, return_min_pool: list[float]) -> float:
     lo, hi = min(return_min_pool), max(return_min_pool)
     if hi == lo:
         return 1.0
-    return (opp.return_min - lo) / (hi - lo)
+    # Floored at 0.2: every candidate here already cleared the user's minimum-return bar,
+    # so the worst performer in the eligible set still earns some credit, not zero.
+    return max(0.2, (opp.return_min - lo) / (hi - lo))
 
 
 def risk_fit(opp: Opportunity, query: SearchQuery) -> float:

@@ -56,7 +56,7 @@ complete, not just "the first thing that went wrong":
 | risk | `opportunity.risk <= user.risk` | Ordinal — a Low-risk fund suits a High-risk-tolerant user, not the reverse. |
 | tenure | `min_months <= tenure <= max_months` (skip upper bound if open-ended) | Matches the requested lock-in period against the product's actual term. |
 | minimum_return | `return_supported and return_min >= minimum_return` | Uses `return_min`, not `return_max` — a "14-18%" range only guarantees the floor; qualifying on the ceiling would promise an outcome the product doesn't guarantee. |
-| category | case-insensitive exact match, only if given | No natural ordering between categories, so it's exact-match, not a threshold. |
+| category | case-insensitive substring match (`requested in opportunity_category`), only if given | Providers name specific products ("Corporate Debt", "Real Estate Debt"); users think in broad asset classes ("Debt"). A broad query term should match a narrower product name that contains it. Changed from exact match after checking real data: two opportunities (`OPP012`, `OPP023`) do have the exact category `"Debt"`, but seven others (`Corporate Debt`, `Real Estate Debt`, `Venture Debt`, ...) would be invisible to a "Debt" search under exact matching even though they're clearly the same asset class to a user. |
 | liquidity | `opportunity.liquidity >= requested`, only if given | Liquidity is ordinal (how easily you can exit). More liquidity than requested is strictly better, so it's a floor, not an exact match. |
 
 ## Ranking
@@ -65,11 +65,16 @@ Score is 0-100 across five weighted components, each normalized to 0.0-1.0 first
 
 | Component | Weight | Formula |
 |---|---|---|
-| return | 30 | min-max normalize `return_min` across the eligible set (unsupported = 0.5, all equal = 1.0) |
+| return | 30 | min-max normalize `return_min` across the eligible set, floored at 0.2 (unsupported = 0.5, all equal = 1.0) |
 | risk_fit | 25 | `1.0 - (user.risk - opp.risk) * 0.15`, floored at 0.3 |
 | tenure_fit | 20 | 0.8 if open-ended; otherwise 1 minus distance from the product's midpoint, scaled by its half-width |
 | budget | 15 | `1 - (min_investment / investment_amount)`, clipped to [0, 1] |
 | preference | 10 | split evenly across category/liquidity if given; exact match earns full share, liquidity above the requested level earns half; no preferences given = full 10 |
+
+The return floor (0.2, not 0.0) exists because min-max normalization always drives the worst
+performer in the eligible set to zero, regardless of how good that worst performer actually is —
+every candidate here already cleared the user's minimum-return bar, so relative ranking
+shouldn't zero one out entirely for simply being last.
 
 Weight reasoning: return is weighted highest because it's what people are actually comparing
 products on. risk_fit is close behind — recommending something riskier than requested is the

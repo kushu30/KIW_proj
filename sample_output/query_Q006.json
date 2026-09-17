@@ -13,11 +13,11 @@
         "preference": 10.0
       },
       "reasons": [
-        "investment 250000 meets minimum 200000",
+        "investment 250,000 meets minimum 200,000",
         "risk MODERATE within tolerance MODERATE",
         "tenure 24 months within 24-24 months",
         "return_min 9.9% meets minimum 9%",
-        "no preference given",
+        "category: no preference given",
         "liquidity MEDIUM meets minimum MEDIUM",
         "score 88.00/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 3.0, preference 10.0)"
       ],
@@ -46,11 +46,11 @@
         "preference": 10.0
       },
       "reasons": [
-        "investment 250000 meets minimum 150000",
+        "investment 250,000 meets minimum 150,000",
         "risk MODERATE within tolerance MODERATE",
         "tenure 24 months within 24-24 months",
         "return_min 9.7% meets minimum 9%",
-        "no preference given",
+        "category: no preference given",
         "liquidity MEDIUM meets minimum MEDIUM",
         "score 84.33/100 (return 23.33, risk_fit 25.0, tenure_fit 20.0, budget 6.0, preference 10.0)"
       ],
@@ -70,22 +70,22 @@
     {
       "id": "OPP029",
       "name": "Cobalt Multi Asset Strategy",
-      "score": 54.0,
+      "score": 60.0,
       "score_breakdown": {
-        "return": 0.0,
+        "return": 6.0,
         "risk_fit": 25.0,
         "tenure_fit": 10.0,
         "budget": 9.0,
         "preference": 10.0
       },
       "reasons": [
-        "investment 250000 meets minimum 100000",
+        "investment 250,000 meets minimum 100,000",
         "risk MODERATE within tolerance MODERATE",
         "tenure 24 months within 24-36 months",
         "return_min 9% meets minimum 9%",
-        "no preference given",
+        "category: no preference given",
         "liquidity MEDIUM meets minimum MEDIUM",
-        "score 54.00/100 (return 0.0, risk_fit 25.0, tenure_fit 10.0, budget 9.0, preference 10.0)"
+        "score 60.00/100 (return 6.0, risk_fit 25.0, tenure_fit 10.0, budget 9.0, preference 10.0)"
       ],
       "attributes": {
         "provider": "Cobalt Wealth",
