@@ -5,6 +5,10 @@ A take-home assessment (50 marks). Django + DRF app that ingests a dataset of 30
 opportunity records, validates and normalizes it, applies eligibility rules, ranks matches,
 and exposes `POST /opportunities/search/`.
 
+This is a 50-mark take-home, not a production system — favour simple, readable code over
+completeness. Don't add configurability, abstractions, or edge-case handling the dataset or
+marking scheme doesn't call for.
+
 ## Marking scheme
 | Section | Marks | Requirement |
 |---|---|---|
@@ -61,6 +65,8 @@ validator.py
 eligibility.py
 ranking.py
 tests/ test_validator.py, test_eligibility.py, test_ranking.py, test_api.py
+  aim for roughly 25 focused tests total across the suite, not exhaustive coverage —
+  one good test per rule and per parser format, plus the API cases
 scripts/run_samples.py
 data/ original dataset, untouched
 sample_output/
@@ -79,7 +85,7 @@ Return: `(return_min, return_max)` in % p.a. Non-numeric (e.g. "market-linked") 
 ## Eligibility rules (all must pass)
 | Rule | Logic |
 |---|---|
-| amount | `investment_amount >= min_investment` (and `<= max_investment` if present) |
+| amount | `investment_amount >= min_investment` |
 | risk | `opportunity.risk <= user.risk` |
 | tenure | `min_months <= tenure_months <= max_months` (skip upper check if max is None) |
 | minimum_return | only if given: `return_supported AND return_min >= minimum_return`. Uses return_min because promising the upper bound is misleading |
@@ -99,7 +105,7 @@ Weights as named constants: return 30, risk_fit 25, tenure_fit 20, budget 15, pr
 | return | min-max normalize `return_min` across eligible set with supported return. All equal -> 1.0. Unsupported -> 0.5 |
 | risk_fit | `diff = user.risk - opp.risk`; `1.0 - diff*0.15`, floored at 0.3 |
 | tenure_fit | max is None -> 0.8. Else `mid=(min+max)/2`, `half=(max-min)/2`; if half==0 -> 1.0, else `1 - 0.5*abs(tenure-mid)/half` |
-| budget | `max_investment` exists and amount > it -> `max_investment/amount`, else 1.0 |
+| budget | `1 - (min_investment / investment_amount)`, clipped to 0.0-1.0. A lower entry bar leaves more capital free for diversification |
 | preference | split equally across preferences given. Exact category match earns its share; exact liquidity match earns its share, higher-than-requested earns half. No preferences -> full 10 |
 
 Breakdown reports POINTS per component (value × weight). Sort by score desc, then id asc.
