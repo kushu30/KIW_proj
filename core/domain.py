@@ -93,6 +93,8 @@ class SearchQuery:
 
 @dataclass
 class EligibilityResult:
-    opportunity_id: str
+    opportunity: Opportunity
     eligible: bool
-    rule_outcomes: dict[str, RuleOutcome] = field(default_factory=dict)
+    passed_reasons: dict[str, str] = field(default_factory=dict)
+    failed_reasons: dict[str, str] = field(default_factory=dict)
+    failed_rules: list[str] = field(default_factory=list)
