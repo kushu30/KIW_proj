@@ -41,7 +41,7 @@ def preference_fit(opp: Opportunity, query: SearchQuery) -> float:
 
     share = 1.0 / len(preferences)
     earned = 0.0
-    if query.category is not None and opp.category.lower() == query.category.lower():
+    if query.category is not None and query.category.strip().lower() in opp.category.strip().lower():
         earned += share
     if query.liquidity is not None:
         if opp.liquidity == query.liquidity:

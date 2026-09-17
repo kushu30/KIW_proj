@@ -4,13 +4,13 @@
     {
       "id": "OPP020",
       "name": "Terra Green Energy Debenture",
-      "score": 83.75,
+      "score": 88.75,
       "score_breakdown": {
         "return": 30.0,
         "risk_fit": 25.0,
         "tenure_fit": 20.0,
         "budget": 3.75,
-        "preference": 5.0
+        "preference": 10.0
       },
       "reasons": [
         "investment 200,000 meets minimum 150,000",
@@ -19,7 +19,7 @@
         "return_min 9.7% meets minimum 9%",
         "category 'Corporate Debt' matches preference 'Debt'",
         "liquidity MEDIUM meets minimum MEDIUM",
-        "score 83.75/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 3.75, preference 5.0)"
+        "score 88.75/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 3.75, preference 10.0)"
       ],
       "attributes": {
         "provider": "Terra Finance",
