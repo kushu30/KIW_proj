@@ -1,0 +1,38 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "id": "OPP026",
+      "name": "Zenith Government Securities",
+      "score": 85.0,
+      "score_breakdown": {
+        "return": 30.0,
+        "risk_fit": 25.0,
+        "tenure_fit": 20.0,
+        "budget": 0.0,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 50000 meets minimum 50000",
+        "risk LOW within tolerance LOW",
+        "tenure 12 months within 12-12 months",
+        "no preference given",
+        "no preference given",
+        "liquidity HIGH meets minimum HIGH",
+        "score 85.00/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 0.0, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Zenith AMC",
+        "category": "Government Bonds",
+        "min_investment": 50000,
+        "tenure_min_months": 12,
+        "tenure_max_months": 12,
+        "risk": "LOW",
+        "return_min": 6.8,
+        "return_max": 6.8,
+        "return_supported": true,
+        "liquidity": "HIGH"
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": "OPP025",
+      "name": "Yellowstone Asset Lease",
+      "score": 88.0,
+      "score_breakdown": {
+        "return": 30.0,
+        "risk_fit": 25.0,
+        "tenure_fit": 20.0,
+        "budget": 3.0,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 250000 meets minimum 200000",
+        "risk MODERATE within tolerance MODERATE",
+        "tenure 24 months within 24-24 months",
+        "return_min 9.9% meets minimum 9%",
+        "no preference given",
+        "liquidity MEDIUM meets minimum MEDIUM",
+        "score 88.00/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 3.0, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Yellowstone Finance",
+        "category": "Asset Leasing",
+        "min_investment": 200000,
+        "tenure_min_months": 24,
+        "tenure_max_months": 24,
+        "risk": "MODERATE",
+        "return_min": 9.9,
+        "return_max": 9.9,
+        "return_supported": true,
+        "liquidity": "MEDIUM"
+      }
+    },
+    {
+      "id": "OPP020",
+      "name": "Terra Green Energy Debenture",
+      "score": 84.33,
+      "score_breakdown": {
+        "return": 23.33,
+        "risk_fit": 25.0,
+        "tenure_fit": 20.0,
+        "budget": 6.0,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 250000 meets minimum 150000",
+        "risk MODERATE within tolerance MODERATE",
+        "tenure 24 months within 24-24 months",
+        "return_min 9.7% meets minimum 9%",
+        "no preference given",
+        "liquidity MEDIUM meets minimum MEDIUM",
+        "score 84.33/100 (return 23.33, risk_fit 25.0, tenure_fit 20.0, budget 6.0, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Terra Finance",
+        "category": "Corporate Debt",
+        "min_investment": 150000,
+        "tenure_min_months": 24,
+        "tenure_max_months": 24,
+        "risk": "MODERATE",
+        "return_min": 9.7,
+        "return_max": 9.7,
+        "return_supported": true,
+        "liquidity": "MEDIUM"
+      }
+    },
+    {
+      "id": "OPP029",
+      "name": "Cobalt Multi Asset Strategy",
+      "score": 54.0,
+      "score_breakdown": {
+        "return": 0.0,
+        "risk_fit": 25.0,
+        "tenure_fit": 10.0,
+        "budget": 9.0,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 250000 meets minimum 100000",
+        "risk MODERATE within tolerance MODERATE",
+        "tenure 24 months within 24-36 months",
+        "return_min 9% meets minimum 9%",
+        "no preference given",
+        "liquidity MEDIUM meets minimum MEDIUM",
+        "score 54.00/100 (return 0.0, risk_fit 25.0, tenure_fit 10.0, budget 9.0, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Cobalt Wealth",
+        "category": "Multi Asset",
+        "min_investment": 100000,
+        "tenure_min_months": 24,
+        "tenure_max_months": 36,
+        "risk": "MODERATE",
+        "return_min": 9.0,
+        "return_max": 9.0,
+        "return_supported": true,
+        "liquidity": "MEDIUM"
+      }
+    }
+  ]
+}

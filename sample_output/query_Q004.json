@@ -1,0 +1,71 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "id": "OPP023",
+      "name": "Willow Income Opportunity",
+      "score": 81.25,
+      "score_breakdown": {
+        "return": 30.0,
+        "risk_fit": 21.25,
+        "tenure_fit": 20.0,
+        "budget": 0.0,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 80000 meets minimum 80000",
+        "risk LOW_MODERATE within tolerance MODERATE",
+        "tenure 18 months within 18-18 months",
+        "no preference given",
+        "no preference given",
+        "liquidity HIGH meets minimum HIGH",
+        "score 81.25/100 (return 30.0, risk_fit 21.25, tenure_fit 20.0, budget 0.0, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Willow Asset Management",
+        "category": "Debt",
+        "min_investment": 80000,
+        "tenure_min_months": 18,
+        "tenure_max_months": 18,
+        "risk": "LOW_MODERATE",
+        "return_min": 7.9,
+        "return_max": 7.9,
+        "return_supported": true,
+        "liquidity": "HIGH"
+      }
+    },
+    {
+      "id": "OPP003",
+      "name": "Cedar Short Duration Fund",
+      "score": 61.56,
+      "score_breakdown": {
+        "return": 0.0,
+        "risk_fit": 21.25,
+        "tenure_fit": 20.0,
+        "budget": 10.31,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 80000 meets minimum 25000",
+        "risk LOW_MODERATE within tolerance MODERATE",
+        "tenure 18 months within 12-24 months",
+        "no preference given",
+        "no preference given",
+        "liquidity HIGH meets minimum HIGH",
+        "score 61.56/100 (return 0.0, risk_fit 21.25, tenure_fit 20.0, budget 10.31, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Cedar Asset Management",
+        "category": "Mutual Fund",
+        "min_investment": 25000,
+        "tenure_min_months": 12,
+        "tenure_max_months": 24,
+        "risk": "LOW_MODERATE",
+        "return_min": 7.1,
+        "return_max": 7.1,
+        "return_supported": true,
+        "liquidity": "HIGH"
+      }
+    }
+  ]
+}

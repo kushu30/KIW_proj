@@ -1,0 +1,38 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "id": "OPP004",
+      "name": "Delta Growth Equity Basket",
+      "score": 92.5,
+      "score_breakdown": {
+        "return": 30.0,
+        "risk_fit": 25.0,
+        "tenure_fit": 20.0,
+        "budget": 7.5,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 100000 meets minimum 50000",
+        "risk HIGH within tolerance HIGH",
+        "tenure 36 months within 36-36 months",
+        "return_min 14% meets minimum 12%",
+        "category Equity matches Equity",
+        "liquidity LOW meets minimum LOW",
+        "score 92.50/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 7.5, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Delta Wealth Partners",
+        "category": "Equity",
+        "min_investment": 50000,
+        "tenure_min_months": 36,
+        "tenure_max_months": 36,
+        "risk": "HIGH",
+        "return_min": 14.0,
+        "return_max": 18.0,
+        "return_supported": true,
+        "liquidity": "LOW"
+      }
+    }
+  ]
+}

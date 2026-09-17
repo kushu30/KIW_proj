@@ -1,0 +1,35 @@
+{
+  "total": 31,
+  "valid_count": 28,
+  "invalid_count": 3,
+  "issues": [
+    {
+      "record_id": "OPP002",
+      "field": "risk",
+      "severity": "error",
+      "message": "unrecognized risk label",
+      "raw_value": "Medium"
+    },
+    {
+      "record_id": "OPP005",
+      "field": "risk",
+      "severity": "error",
+      "message": "unrecognized risk label",
+      "raw_value": "Moderately High"
+    },
+    {
+      "record_id": "OPP014",
+      "field": "expected_return",
+      "severity": "warning",
+      "message": "unparseable return; treated as not disclosed",
+      "raw_value": "Variable"
+    },
+    {
+      "record_id": "OPP030",
+      "field": "opportunity_id",
+      "severity": "error",
+      "message": "duplicate opportunity_id; keeping first occurrence",
+      "raw_value": "OPP030"
+    }
+  ]
+}

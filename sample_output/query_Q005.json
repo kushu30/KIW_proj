@@ -1,0 +1,71 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "id": "OPP004",
+      "name": "Delta Growth Equity Basket",
+      "score": 97.5,
+      "score_breakdown": {
+        "return": 30.0,
+        "risk_fit": 25.0,
+        "tenure_fit": 20.0,
+        "budget": 12.5,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 300000 meets minimum 50000",
+        "risk HIGH within tolerance HIGH",
+        "tenure 36 months within 36-36 months",
+        "return_min 14% meets minimum 11%",
+        "category Equity matches Equity",
+        "liquidity LOW meets minimum LOW",
+        "score 97.50/100 (return 30.0, risk_fit 25.0, tenure_fit 20.0, budget 12.5, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Delta Wealth Partners",
+        "category": "Equity",
+        "min_investment": 50000,
+        "tenure_min_months": 36,
+        "tenure_max_months": 36,
+        "risk": "HIGH",
+        "return_min": 14.0,
+        "return_max": 18.0,
+        "return_supported": true,
+        "liquidity": "LOW"
+      }
+    },
+    {
+      "id": "OPP019",
+      "name": "Summit Dividend Equity",
+      "score": 51.0,
+      "score_breakdown": {
+        "return": 0.0,
+        "risk_fit": 25.0,
+        "tenure_fit": 16.0,
+        "budget": 0.0,
+        "preference": 10.0
+      },
+      "reasons": [
+        "investment 300000 meets minimum 300000",
+        "risk HIGH within tolerance HIGH",
+        "tenure 36 months within 36+ months",
+        "return_min 11% meets minimum 11%",
+        "category Equity matches Equity",
+        "liquidity LOW meets minimum LOW",
+        "score 51.00/100 (return 0.0, risk_fit 25.0, tenure_fit 16.0, budget 0.0, preference 10.0)"
+      ],
+      "attributes": {
+        "provider": "Summit PMS",
+        "category": "Equity",
+        "min_investment": 300000,
+        "tenure_min_months": 36,
+        "tenure_max_months": null,
+        "risk": "HIGH",
+        "return_min": 11.0,
+        "return_max": 15.0,
+        "return_supported": true,
+        "liquidity": "LOW"
+      }
+    }
+  ]
+}
